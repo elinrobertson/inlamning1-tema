@@ -44,8 +44,10 @@ add_action('wp_enqueue_scripts', 'register_styles');
 
 // Adds scripts 
 function register_scripts() {
-    wp_register_script('script-jquery', get_stylesheet_directory_uri() . "/assets/js/jquery.js");
-    wp_register_script('script-js', get_stylesheet_directory_uri() . "/assets/js/script.js", '', false, true);
+    wp_register_script('script-jquery', get_template_directory_uri() . "/assets/js/jquery.js");
+    wp_register_script('script-js', get_template_directory_uri() . "/assets/js/script.js", '', false, true);
+    wp_enqueue_script('script-js');
+    wp_enqueue_script('script-jquery');
 }
 
 add_action('wp_enqueue_scripts', 'register_scripts');
