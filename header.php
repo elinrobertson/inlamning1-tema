@@ -50,9 +50,6 @@
 				<div class="row">
 					<div class="col-xs-12">
 
-                    <!-- 
-                        Kolla på alternativ meny
-                    -->
                     <?php
                         wp_nav_menu(
                             array(
