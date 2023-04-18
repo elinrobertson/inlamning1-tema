@@ -9,7 +9,7 @@
 							<div class="hero">
 							<img src="<?php the_post_thumbnail_url(); ?>" />
 								<div class="text">
-								<?php if( have_posts() ): while( have_posts() ): the_post();?>
+								<?php if( have_posts() ): while( have_posts() ): the_post();?>  <!-- Rendering the post on the front page -->
 								<h1><?php the_title(); ?></h1>
 								<p><?php the_content(); ?></p>
 								<?php endwhile; else: endif;?>

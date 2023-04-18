@@ -21,7 +21,7 @@
 					<a class="logo" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
 					</div>
 					<div class="col-sm-6 hidden-xs">
-						<form method="get" id="searchform" class="searchform" action="<?php echo esc_url(home_url('/'));?>">
+						<form method="get" id="searchform" class="searchform" action="<?php echo esc_url(home_url('/'));?>">  <!-- Searchform -->
                            <div> <?php get_search_form() ;?> </div> 
 						</form>
 					</div>
@@ -50,6 +50,7 @@
 				<div class="row">
 					<div class="col-xs-12">
 
+					 <!-- Header menu -->
                     <?php
                         wp_nav_menu(
                             array(

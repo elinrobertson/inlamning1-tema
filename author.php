@@ -6,7 +6,7 @@
 					<div class="row">
 						<div id="primary" class="col-xs-12 col-md-9">
 							<h1><?php the_author(); ?></h1>
-                            <?php if( have_posts() ): while( have_posts() ): the_post();?>
+                            <?php if( have_posts() ): while( have_posts() ): the_post();?>  <!-- Rendering the archive posts -->
 							<article>
                             <img src="<?php the_post_thumbnail_url('full'); ?>" />
 								<h2 class="title">
@@ -27,7 +27,7 @@
                             </article>
                             <?php endwhile; else: endif;?>
 
-				<nav class="navigation pagination">
+				<nav class="navigation pagination">  <!-- Pagination -->
 					<?php
 						global $wp_query;
 
@@ -45,6 +45,7 @@
 
 						</div>
 
+						 <!-- Dynamic sidebar -->
 						<aside id="secondary" class="col-xs-12 col-md-3">
 							<div id="sidebar">
 								<ul>
@@ -72,3 +73,4 @@
 			</section>
 		</main>
 
+<?php get_footer(); ?>

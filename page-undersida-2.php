@@ -8,12 +8,13 @@
 
                             <h1><?php the_title(); ?></h1> 
                             <p><?php the_content(); ?></p>
-
                         </div>
+
 						<aside id="secondary" class="col-xs-12 col-md-3 col-md-pull-9">
                         <ul class="side-menu">
 
-                            <?php wp_nav_menu(
+                            <!-- Side menu -->                        
+                            <?php wp_nav_menu( 
                                 array(
                                 'side-menu' => 'Side Menu',
                                 'theme_location' => 'side-menu',

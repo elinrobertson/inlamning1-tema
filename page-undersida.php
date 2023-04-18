@@ -13,6 +13,7 @@
 						<aside id="secondary" class="col-xs-12 col-md-3">
 							<ul class="side-menu">
 
+								<!-- Side menu -->
                                 <?php wp_nav_menu(
                                   array(
                                     'side-menu' => 'Side Menu',

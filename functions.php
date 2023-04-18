@@ -15,6 +15,7 @@ add_action('after_setup_theme', 'theme_support')
 
 
 <?php
+
 // Adds menus
 function add_menus() {
     $locations = array(
